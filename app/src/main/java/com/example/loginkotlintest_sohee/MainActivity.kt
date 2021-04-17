@@ -26,9 +26,13 @@ class MainActivity : AppCompatActivity() {
 //            id도 맞고, 비번도 맞을 때 => 관리자
             if(inputId == "admin@test.com" && inputPassword == "qwer"){
 
-//                둘 다 맞으면 => 관리자 입니다. 토스트
+//                관리자 이름을 변수에 임시 저장
 
-                Toast.makeText(this, "관리자입니다.", Toast.LENGTH_SHORT).show()
+                val name = "궘소희"
+
+//                둘 다 맞으면 => 권소희 관리자 입니다. 토스트
+
+                Toast.makeText(this, "${name.toString()} 관리자입니다.", Toast.LENGTH_SHORT).show()
         }
             else {
 //                아이디나 비번 둘 중에 하나라도 틀리면 => 로그인 실패 토스트
